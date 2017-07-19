@@ -53,6 +53,23 @@ def iso(G1, glist):
              node_sizImporte=40,
              asdfadsfasdf
              asdfadsfasdf
+                
+                asdf
+                asdf
+                
+                a
+                sdf
+                
+                qwe
+                twer
+                t
+                ve
+                rtv
+                wev
+                we
+                vtwt
+                w
+                
              node_color=c,
              vmin=0.0,
              vmax=1.0,
