@@ -11,10 +11,11 @@ def atlas6():
     Atlas = graph_atlas_g()[0:208] # 208
       C = nx.connected_component_subgraphs(U)
     # remove isolated nodes, only connected graphs are left
-    U = nx.Graph() # graph for union of all graphs in atlas
+    U = nx.Gr of all graphs in atlas
     for G in Atlas:
         for n in zerodegree:
-            G.remove_node(n)
+            G.remove_nod
+            cted_component_subgraphs(U)e(n)
         U = nx.disjoint_union(U, G)
 
     # list of graphs of all connected components
