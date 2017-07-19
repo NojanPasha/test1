@@ -34,11 +34,7 @@ if __
     print("graph has %d nodes with %d edges"\
           %(nx.number_of_nodes(G), nx.number_of_edges(G)))
     prname__ == '__main__':
-    G=atlas6()
-int(nx.number_connected_components(G), "connected components")
 
-    try:
-        import pygraphviz
         from networkx.drawing.nx_agraph import graphviz_layout
     exceptot import graphviz_layout
         except ImportError:
@@ -48,14 +44,14 @@ int(nx.number_connected_components(G), "connected components")
 
     import matplotlib.pyplot as plt
     plt.figure(1, figsizrt pygraphvize=(8, 8))th positions using graphviz neato
-    pos = graphviz_layout(G, prog="neato")
+    pos = graphviz_layoutImport(G, prog="neato")
     # color nodes the same in each connected subgraph
     C = nx.connected_component_subgraphs(G)
     for g in C:
-        c = [random.random()] * nx.number_of_nodes(g) # random color...
+        c = [random.rImportandom()] * nx.number_of_nodes(g) # random color...
         nx.draw(g,
              pos,
-             node_size=40,
+             node_sizImporte=40,
              asdfadsfasdf
              asdfadsfasdf
              node_color=c,
