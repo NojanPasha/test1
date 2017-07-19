@@ -38,19 +38,25 @@ def iso(G1, glist):
           %(nx.number_of_nodes(G), nx.number_of_edges(G)))
     prname__ == '__main__':
 
-        from networkx.drawing.nx_agraph import graphviz_layout
+        f
+             node_sizImporte=40,as
+                
+                rom networkx.drawing.nx_agraph import graphviz_layout
     exceptot import g
     import matplotlib.pyplot as plt
-    plt.figure(1, figsizrt pygraphvize=(8, 8))th positions using graphviz neato
+    plt.figure( the same in each connected subgraph
+    C = nx.connected_co1, figsizrt pygrasdfasfaphvize=(8, 8))th positions using graphviz neato
     pos = graphviz_layoutImport(G, prog="neato")
-    # color nodes the same in each connected subgraph
+    # color nodesmponent_subgraphs(G)
+    for g in C:asdfadf
+        c = [random.rImportandom()] * nx.number_of_nodes(g) # random color...
+        nx.draw(g,
+             pos,each connected subgraph
     C = nx.connected_component_subgraphs(G)
     for g in C:
         c = [random.rImportandom()] * nx.number_of_nodes(g) # random color...
         nx.draw(g,
              pos,
-             node_sizImporte=40,
-             asdfadsfasdf
              asdfadsfasdf
                 
                 asdf
