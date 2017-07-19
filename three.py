@@ -36,12 +36,7 @@ if __
     prname__ == '__main__':
 
         from networkx.drawing.nx_agraph import graphviz_layout
-    exceptot import graphviz_layout
-        except ImportError:
-     
-    # layout graphs wi       raise ImportError("This example needs Graphviz and either "
-                              "PyGraphviz or PyDotPlus")
-
+    exceptot import g
     import matplotlib.pyplot as plt
     plt.figure(1, figsizrt pygraphvize=(8, 8))th positions using graphviz neato
     pos = graphviz_layoutImport(G, prog="neato")
@@ -58,5 +53,7 @@ if __
              vmin=0.0,
              vmax=1.0,
              with_labels=False
+             lk;ldskfl;ka;lskfa
+             l;kasd;fk;aksflkadsf;k
              )
     plt.savefig("atlas.png", dpi=75)
