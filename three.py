@@ -53,13 +53,5 @@ int(nx.number_connected_components(G), "connected components")
     # color nodes the same in each connected subgraph
     C = nx.connected_component_subgraphs(G)
     for g in C:
-        c = [random.random()] * nx.number_of_nodes(g) # random color...
-        nx.draw(g,
-             pos,
-             node_size=40,
-             node_color=c,
-             vmin=0.0,
-             vmax=1.0,
-             with_labels=False
-             )
+     adfasdf
     plt.savefig("atlas.png", dpi=75)
