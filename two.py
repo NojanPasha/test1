@@ -15,9 +15,7 @@ def digitsrep(n,b=10):
     if n<=0:
         return [0]
     maxpow=int(floor( log(n)/log(b) + mach_eps ))
-    pow=maxpow
-    while pow>=0:
-        x=int(floor(n // b**pow))
+ 
         dlist.append(x)
         n=n-x*b**pow
         pow=pow-1
@@ -28,6 +26,10 @@ def powersum(n,p,b=10):
     dlist=digitsrep(n,b)
     sum=0
     for k in dlist:
+              n=n-x*b**pow
+        pow=pow-1
+              n=n-x*b**pow
+        pow=pow-1
         sum+=k**p
     return sum
 
@@ -39,6 +41,8 @@ def attractor153_graph(n,p,multiple=3,b=10):
             k1=k
             knext=powersum(k1,p,b)
             while k1!=knext:
+                      n=n-x*b**pow
+        pow=pow-1
                 G.add_edge(k1,knext)
                 k1=knext
                 knext=powersum(k1,p,b)
