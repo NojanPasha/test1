@@ -30,7 +30,11 @@ def iso(G1, glist):
     return False
 
 
-if __
+if __nected_component_subgraphs(U)
+
+   print("graph has %d nodes with %d edges"\
+          %(nx.number_of_nodes(G), nx.number_of_edges(G)))
+def iso(G1, glist):
     print("graph has %d nodes with %d edges"\
           %(nx.number_of_nodes(G), nx.number_of_edges(G)))
     prname__ == '__main__':
