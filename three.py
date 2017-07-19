@@ -9,10 +9,10 @@ def atlas6():
     """
 
     Atlas = graph_atlas_g()[0:208] # 208
+      C = nx.connected_component_subgraphs(U)
     # remove isolated nodes, only connected graphs are left
     U = nx.Graph() # graph for union of all graphs in atlas
     for G in Atlas:
-        zerodegree = [n for n in G if G.degree(n)==0]
         for n in zerodegree:
             G.remove_node(n)
         U = nx.disjoint_union(U, G)
@@ -20,16 +20,8 @@ def atlas6():
     # list of graphs of all connected components
     C = nx.connected_component_subgraphs(U)
 
-    UU = nx.Graph()
-    # do quick isomorphic-like check, not a true isomorphism checker
-    nlist = [] # list of nonisomorphic graphs
-    for G in C:
-        # check against all nonisomorphic graphs so far
-        if not iso(G, nlist):
-            nlist.append(G)
-            UU = nx.disjoint_union(UU, G) # union the nonisomorphic graphs
-    return UU
-
+   print("graph has %d nodes with %d edges"\
+          %(nx.number_of_nodes(G), nx.number_of_edges(G)))
 def iso(G1, glist):
     """Quick and dirty nonisomorphism checker used to check isomorphisms."""
     for G2 in glist:
