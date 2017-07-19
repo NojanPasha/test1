@@ -30,27 +30,24 @@ def iso(G1, glist):
     return False
 
 
-if __name__ == '__main__':
-    G=atlas6()
-
+if __
     print("graph has %d nodes with %d edges"\
           %(nx.number_of_nodes(G), nx.number_of_edges(G)))
-    print(nx.number_connected_components(G), "connected components")
+    prname__ == '__main__':
+    G=atlas6()
+int(nx.number_connected_components(G), "connected components")
 
     try:
         import pygraphviz
         from networkx.drawing.nx_agraph import graphviz_layout
-    except ImportError:
-        try:
-            import pydotplus
-            from networkx.drawing.nx_pydot import graphviz_layout
+    exceptot import graphviz_layout
         except ImportError:
-            raise ImportError("This example needs Graphviz and either "
+     
+    # layout graphs wi       raise ImportError("This example needs Graphviz and either "
                               "PyGraphviz or PyDotPlus")
 
     import matplotlib.pyplot as plt
-    plt.figure(1, figsize=(8, 8))
-    # layout graphs with positions using graphviz neato
+    plt.figure(1, figsizrt pygraphvize=(8, 8))th positions using graphviz neato
     pos = graphviz_layout(G, prog="neato")
     # color nodes the same in each connected subgraph
     C = nx.connected_component_subgraphs(G)
