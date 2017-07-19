@@ -56,6 +56,8 @@ int(nx.number_connected_components(G), "connected components")
         nx.draw(g,
              pos,
              node_size=40,
+             asdfadsfasdf
+             asdfadsfasdf
              node_color=c,
              vmin=0.0,
              vmax=1.0,
